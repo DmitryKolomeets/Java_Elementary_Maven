@@ -1,3 +1,5 @@
+import hometask12.Jewels;
+
 public class Main {
 
     public static void main(String[] args) {
