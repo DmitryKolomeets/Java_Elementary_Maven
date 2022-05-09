@@ -37,9 +37,9 @@ public class SquarSort {
 
 
     public static void main(String[] args) {
-       int [] arr = {-7,-3,2,3,11};
+        int[] arr = {-7, -3, 2, 3, 11};
 
-       squarAndSortNonDecreasing(arr);
+        squarAndSortNonDecreasing(arr);
         System.out.println(Arrays.toString(arr));
 
     }

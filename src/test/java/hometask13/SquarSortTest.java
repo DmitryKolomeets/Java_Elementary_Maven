@@ -19,6 +19,6 @@ public class SquarSortTest {
         int[] nums2 = {-7,-3,2,3,11};
         int [] actual2 = squarSort1.squarAndSortNonDecreasing(nums2);
         int [] expected2 = {4,9,9,49,121};
-        assertArrayEquals(expected, actual);
+        assertArrayEquals(expected2, actual2);
     }
 }

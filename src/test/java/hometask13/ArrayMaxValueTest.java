@@ -20,13 +20,13 @@ public class ArrayMaxValueTest {
         int[] nums2 = {1,5,4,5};
         int actual2 = arrayMaxValue2.sortAscendingThenMax(nums2);
         int expected2 = 16;
-        assertEquals(expected, actual);
+        assertEquals(expected2, actual2);
 
         ArrayMaxValue arrayMaxValue3 = new ArrayMaxValue();
         int[] nums3 = {3,7};
         int actual3 = arrayMaxValue2.sortAscendingThenMax(nums3);
         int expected3 = 12;
-        assertEquals(expected, actual);
+        assertEquals(expected3, actual3);
 
     }
 }

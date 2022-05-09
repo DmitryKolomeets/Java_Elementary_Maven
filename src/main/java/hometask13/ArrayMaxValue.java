@@ -31,7 +31,8 @@ public class ArrayMaxValue {
 
         return maxValue;
 
-    }}
+    }
+}
 
 
 
