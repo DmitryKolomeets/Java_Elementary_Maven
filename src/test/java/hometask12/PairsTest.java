@@ -1,3 +1,6 @@
+package hometask12;
+
+import hometask12.Pairs;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

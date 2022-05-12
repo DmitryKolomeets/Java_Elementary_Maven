@@ -1,3 +1,5 @@
+package hometask12;
+
 public class Pairs {
 
 
