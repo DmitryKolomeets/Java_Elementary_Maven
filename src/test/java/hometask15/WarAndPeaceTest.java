@@ -14,28 +14,16 @@ import java.nio.file.Paths;
 import static org.junit.Assert.*;
 
 public class WarAndPeaceTest {
-    WarAndPeace warAndPeace = new WarAndPeace();
-    private static File dir;
-
-
-
-    @Rule
-    public TemporaryFolder folder= new TemporaryFolder();
-
 
     @Test
-    public void testFileParser() throws IOException {
-        File createdFile= folder.newFile("warAndPeaceOutput.txt");
-        WarAndPeace warAndPeace1 = new WarAndPeace();
-       Path path = Paths.get("src/main/resources/vim.txt");
-        warAndPeace1.warAndPeaceFilterAndCount();
-        try (FileWriter fileWriter = new FileWriter(createdFile)) {
-            fileWriter.write("1.0 2.0 3.0 4.0");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
+    public void testFileParser() {
+        String path = "src/main/resources/warAndPeaceOutput.txt";
+        File file = new File(path);
+        String absolutePath = file.getAbsolutePath();
+        WarAndPeace warAndPeace = new WarAndPeace();
+        warAndPeace.warAndPeaceFilterAndCount();
+        assertTrue(file.exists());
     }
-
 
     @Test
     public void warAndPeaceFilterAndCount() throws Exception{
